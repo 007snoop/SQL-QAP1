@@ -14,12 +14,3 @@ reqs:
 Atleast 5 student entries
  */
 
-
-
-select
-concat (first_name, ' ', last_name) full_name, 
-email as email,
-school_enrollment_date as date
-from
-students;
-
