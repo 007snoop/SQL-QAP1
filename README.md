@@ -24,17 +24,17 @@ this is in the branch 'project#1-done'
 
 ### students table 
 + Primary key: `id`
-+ stores first name, last name, email, and school enrollment date
++ stores `first_name`, `last_name`, `email`, and `school_enrollment_date`
 + has `many-to-many` relations with `courses` through `enrollments`
 
 ### professors table
 + Primary key: `id`
-+ stores first name, last name, and department
++ stores `first_name`, `last_name`, and `department`
 + has `one-to-many` relations with `courses` because a professor can teach multiple `courses`
 
 ### courses table
 + Primary key: `id`
-+ stores course name, description, and `professor_id`
++ stores `course_name`, `description`, and `professor_id`
 + `professor_id` is a **foreign key**. This references `professors(id)` matching each course to **one** professor
 
 ### enrollment table
